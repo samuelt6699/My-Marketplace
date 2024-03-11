@@ -5,7 +5,7 @@ const Marketplace = () => {
   return (
     <>
    
-      {/* Ad banner section */}
+      
       <div className="ad-banner">
    
         <div className="ad-container">
