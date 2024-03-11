@@ -1,0 +1,32 @@
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ProductListPage from './pages/ProductListPage';
+import ProductDetailPage from './pages/ProductDetailPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
+import UserAccountPage from './pages/UserAccountPage';
+import NotFoundPage from './pages/NotFoundPage';
+
+const App = () => {
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/products" component={ProductListPage} />
+        <Route path="/product/:id" component={ProductDetailPage} />
+        <Route path="/cart" component={CartPage} />
+        <Route path="/checkout" component={CheckoutPage} />
+        <Route path="/account" component={UserAccountPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
+};
+
+export default App;

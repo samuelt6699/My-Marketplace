@@ -1,0 +1,52 @@
+header {
+  background-color: rgb(76, 40, 109);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.Categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.8rem; /* Add padding to the left and right */
+  gap: 1.9rem; /* Spacing between Categories */
+}
+
+.Category {
+  font-size: 14px;
+}
+
+.Category a {
+  text-decoration: none;
+  background-color: rgb(208, 78, 175);
+  color: white;
+  padding: 0.3rem 1rem;
+  border: 1px #ddd dashed;
+  border-radius: 4px;
+  white-space: nowrap; /* Ensure link text does not wrap to a new line */
+}
+
+.Categories a:hover {
+  color: #02478d;
+  border-color: #0066cc;
+  background-color: rgb(152, 204, 237);
+}
+
+
+.categoryLink {
+  text-decoration: none;
+  background-color: rgb(208, 78, 175);
+  color: white;
+  padding: 0.3rem 1rem;
+  border: 1px #ddd dashed;
+  border-radius: 4px;
+  white-space: nowrap; /* Ensure link text does not wrap to a new line */
+}
+
+.categoryLink:hover {
+  color: #02478d;
+  border-color: #0066cc;
+  background-color: rgb(152, 204, 237);
+}
