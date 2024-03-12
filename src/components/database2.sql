@@ -120,6 +120,7 @@ CREATE TABLE ProductsFromVendors (
     FOREIGN KEY (VendorId) REFERENCES VendorInfo(VendorId)
 );
 -- PaymentTransactions table
+
 CREATE TABLE PaymentTransactions (
     TransactionId BIGINT IDENTITY(1,1) PRIMARY KEY,
     OrderId BIGINT NOT NULL,
@@ -131,6 +132,7 @@ CREATE TABLE PaymentTransactions (
     PaymentMethod VARCHAR(255) NOT NULL,
     FOREIGN KEY (OrderId) REFERENCES Orders(OrderId)
 );
+-- User Activity
 CREATE TABLE UserActivity (
     ClientId BIGINT NOT NULL,
     ActivityType VARCHAR(255) NOT NULL,
