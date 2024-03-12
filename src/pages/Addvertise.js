@@ -1,23 +1,28 @@
 import React from 'react';
-import './add.css'
+import './add.css';
 
 const Marketplace = () => {
   return (
-    <>
-   
-      
-      <div className="ad-banner">
-   
-        <div className="ad-container">
-          {/* Link wrapping the image */}
-          <a href="https://link-to-promotion.com" target="_blank" rel="noopener noreferrer">
-            <img src="download.jpg" alt="Ad" style={{ height: '100%', width: 'auto' }} />
+    <div className="ad-start">
+      <div className="ad-container left">
+        <div className="ad-box">
+          <a href="destination-url" target="_blank" rel="noopener noreferrer">
+            <img src="Machzoirim.jpg" alt="Left Ad" />
           </a>
         </div>
       </div>
-      {/* Rest of your page content */}
-    </>
+      <div className="ad-container right">
+        <div className="ad-box">
+          <a href="destination-url" target="_blank" rel="noopener noreferrer">
+            <img src="megila.webp" alt="Right Ad" />
+          </a>
+        </div>
+      </div>
+    </div>
+   
+   
   );
 };
+
 
 export default Marketplace;

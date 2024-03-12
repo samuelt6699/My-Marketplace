@@ -1,29 +1,38 @@
-
-.ad-banner {
-  height: 8rem;  /* Control the height of the banner here */
-  width: 40%;
-  margin: 2rem auto;  /* Top and bottom margins are 2rem, left and right margins are auto */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.ad-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  height: auto;
+}
+.ad-start::after {
+  content: ""; /* Required property for pseudo-elements */
+  position: absolute;
+  top: 100%; /* Positioned just after the end of the .ad-start container */
+  border-top: 1px solid #000; /* Creates the line */
+  width: 100%; /* Ensures the line spans the width of the .ad-start container */
 }
 
 .ad-container {
-  max-width: 100%; /* Allow banner to be as wide as possible */
-  height: 100%; /* Take full height of the ad-banner */
-  margin: 0 auto;
+  width: 35%;
+  height: 20rem; /* updated height as per your instruction */
+  margin: 6rem 3rem;
+  margin-bottom: 1rem;
+  border: 1px dashed blue;
+  align-items: center;
   display: flex;
-  justify-content: center;
-  border: 1px dashed black;
 }
 
-.ad-container a {
-  display: block;
-  height: 100%;
-  max-width: 100%; /* Ensure anchor doesn't exceed banner width */
+.ad-container.left {
+  justify-content: flex-start; /* Aligns the left ad-box to the start, the left side */
 }
 
-.ad-container img {
-  max-height: 100%; /* Image will fill the height of the banner */
-  max-width: 100%; /* Image will fill the width of the banner */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
+.ad-container.right {
+  justify-content: flex-end; /* Aligns the right ad-box to the end, the right side */
+}
+
+.ad-box img {
+  width: 100%; /* 100% of the .ad-box width to fill the ad container */
+  height: 20rem; /* fixed height, as requested */
+  object-fit: contain; /* This will ensure the aspect ratio of images is not distorted */
 }
