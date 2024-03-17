@@ -1,38 +1,38 @@
 .ad-start {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   position: relative;
-  height: auto;
 }
 .ad-start::after {
-  content: ""; /* Required property for pseudo-elements */
+  content: ""; 
   position: absolute;
-  top: 100%; /* Positioned just after the end of the .ad-start container */
-  border-top: 1px solid #000; /* Creates the line */
-  width: 100%; /* Ensures the line spans the width of the .ad-start container */
+  top: 100%;
+  border-top: 1px solid #000;
+  width: 100%; 
 }
 
 .ad-container {
-  width: 35%;
-  height: 20rem; /* updated height as per your instruction */
-  margin: 6rem 3rem;
+  background-color: rgb(233, 239, 245);
+  width: 26%;
+  height: 30rem; 
+  margin: 4rem ;
   margin-bottom: 1rem;
-  border: 1px dashed blue;
+  border-radius: 10px;
   align-items: center;
   display: flex;
+
 }
 
+.ad-heading {
+  width: 30rem;
+  text-align: center;
+ 
+}
 .ad-container.left {
-  justify-content: flex-start; /* Aligns the left ad-box to the start, the left side */
+  justify-content: flex-start; 
 }
 
 .ad-container.right {
-  justify-content: flex-end; /* Aligns the right ad-box to the end, the right side */
+  justify-content: center;
 }
 
-.ad-box img {
-  width: 100%; /* 100% of the .ad-box width to fill the ad container */
-  height: 20rem; /* fixed height, as requested */
-  object-fit: contain; /* This will ensure the aspect ratio of images is not distorted */
-}

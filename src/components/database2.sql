@@ -16,7 +16,7 @@ CREATE TABLE Categories (
 
 CREATE TABLE ProductItems (
     ProductId BIGINT IDENTITY(1,1) PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,
+    ProductName VARCHAR(255) NOT NULL,
     Description TEXT,
     Price DECIMAL(10,2) NOT NULL,
     Image VARCHAR(255),

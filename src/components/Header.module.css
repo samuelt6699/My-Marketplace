@@ -1,5 +1,7 @@
-/* src/components/Header.module.css */
+
 .header {
+  position: relative;
+  z-index: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +16,7 @@
   font-size: 1.5rem;
 }
 
-.logo :hover{
+.logo:hover{
   text-decoration: underline;
 }
 

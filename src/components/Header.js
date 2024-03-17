@@ -1,8 +1,6 @@
-// src/components/Header.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
- // Let's assume you have a CSS module for styling
 
 const Header = () => {
   const [searchItem, setSearchItem] = useState('');
@@ -27,15 +25,13 @@ const Header = () => {
         <form onSubmit={handleSearchSubmit}>
           <input
             type="text"
-            value={searchItem}
+              value={searchItem}
             onChange={handleSearchChange}
             placeholder="Search for products..."
           />
           <button type="submit">Search</button>
         </form>
       </div>
-    
-     
       
       <div className={styles.userActions}>
         <Link to="/about">About Us</Link>
